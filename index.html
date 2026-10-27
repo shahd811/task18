@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+    <title>Smart Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    🛒 Smart <span>Shopping Cart</span>
+</div>
+<div>
+   🛒 MY CART (<span id="title">0</span>)  
+</div>
+</header>
+<main class="container">
+<div class="left">
+
+    <div class="card">
+<h3>🛒 Add a Product</h3>
+<input type="text"  id="productInput" placeholder="Enter Product Name...">
+<div class="btns">
+<button class="ros" onclick="addFirst()"> + Add First</button>
+<button class="ros" onclick="addLast()"> + Add Last</button>
+<button class="red" onclick="removeFirst()"> - Remove First</button>
+<button class="red" onclick="removeLast()"> - Remove Last</button>
+</div>
+</div>
+<div class="card ">
+    <div class="cart_header">
+<h3>☰YOUR CART </h3>
+<span class="badge" id="badge">0 ITEMS</span>
+</div>
+<div id="cartlist" class="empty"></div>
+<div class="empty_icon">🛒</div>
+<b>Your Cart is empty</b>
+<p>Add Some Products to get started!</p>
+</div>
+</div>
+</div>
+<div class="right">
+    <div class="card">
+        <h4>🔍Search in Cart</h4>
+        <input type="text" id="searchInput" placeholder="Enter a Keyword..." oninput="searchCart()">
+        <p id="searchResult" class="search-text"> </p>
+        <p class="small">Check if any product name contains the keyword.</p>
+    
+        <div class="tips">
+            <b>📍Tips</b>
+            <br>
+            <ul>
+                <li>YOU CAN'T ADD SAME PRODUCT TWICE (case insenitive).</li> <br>
+                <li>USE BUTTONS TO ADD OR REMOVE PRODUCTS FROM THE CART.</li> <br>
+                <li>TRY UPPERCASE & SEARCH FEATURES TO SEE THE STRING METHODS IN ACTION!</li> <br>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</main>
+    <script src="index.js"></script>
+</body>
+</html>

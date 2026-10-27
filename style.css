@@ -1,0 +1,129 @@
+body{
+    font-family:  Arial,  sans-serif;
+    background-color:rgb(191, 201, 211);
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+background-color: rgba(182, 121, 121, 0.897);
+color: black;
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 23px;
+font-weight: bold;
+}
+
+header span {
+color: rgba(82, 52, 110, 0.884);
+
+}
+
+.container {
+max-width: 1150px;
+margin: 20px auto;
+display:grid;
+
+gap: 20px;
+padding: 10px;
+}
+.left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right{
+    width: 30%;
+}
+.card {
+    background-color:white;
+    border-radius: 14px;
+    padding:20px;
+    box-shadow: 0 2px 12px  rgb(0, 0, 0, 0,6);
+
+}
+
+input{
+    width: 100%;
+    padding: 11px;
+    margin: 10px;
+    border:1px solid #d1d5db ;
+    border-radius: 8px;
+    box-sizing:border-box;
+
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: translateY(_1px); opacity: 0.9;
+}
+
+ros{
+    background-color: rgb(134, 91, 91);
+    color: black;
+}
+
+red{
+    background-color: rgb(145, 83, 131);
+    color: black;
+}
+.cart_header{display: flex; justify-content: space-between; align-items: center;}
+.badge{
+    background-color:rgb(138, 100, 100);
+    padding:5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    
+}
+.small{font-size: 11px; color: black;}
+.search-text{font-weight: bold; font-size: 13px; color: black;}
+.item{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 8px;
+    margin:8px 0;
+    display: flex;
+    justify-content:space-between;
+    background: rgb(146, 102, 102);
+
+}
+
+.empty{
+text-align: center;
+color: black;
+}
+
+.empty-icon{
+    font-size: 40px; margin-bottom: 10px;
+}
+.tips {
+    background: #f0f9ff;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+
+
+
+
